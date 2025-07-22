@@ -24,7 +24,6 @@ prompt = template.invoke({
     'lengthInput': lengthInput
     })
 
-# Diaplay of the result 
 if st.button("Enter"):
      result = model.invoke(prompt)
      st.markdown(result.content)
